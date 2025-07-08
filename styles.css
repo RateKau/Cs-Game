@@ -5,16 +5,21 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #E6F0FA;
+    background-color: #000000;
 }
 
 .screen {
     text-align: center;
-    background: white;
-    padding: 30px;
+    background: #1C2526;
+    padding: 3vh;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    width: 360px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    width: 90vw;
+    max-width: 800px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hidden {
@@ -22,27 +27,32 @@ body {
 }
 
 h1 {
-    color: #343A40;
-    font-size: 28px;
-    margin: 0 0 20px;
+    color: #FFFFFF;
+    font-size: 4vw;
+    max-font-size: 36px;
+    margin: 0 0 2vh;
 }
 
 h2 {
-    color: #343A40;
-    font-size: 24px;
-    margin: 0 0 15px;
+    color: #FFFFFF;
+    font-size: 3vw;
+    max-font-size: 28px;
+    margin: 0 0 1.5vh;
 }
 
 p {
-    color: #212529;
-    font-size: 16px;
-    margin: 10px 0;
+    color: #D3D3D3;
+    font-size: 2vw;
+    max-font-size: 18px;
+    margin: 1vh 0;
 }
 
 #clickButton {
-    width: 160px;
-    padding: 15px;
-    font-size: 20px;
+    width: 20vw;
+    max-width: 200px;
+    padding: 2vh;
+    font-size: 2.5vw;
+    max-font-size: 22px;
     background-color: #28A745;
     color: white;
     border: none;
@@ -56,15 +66,17 @@ p {
 }
 
 .buttons, .upgrades {
-    margin-top: 25px;
+    margin-top: 3vh;
 }
 
 .buttons button, .upgrades button {
     display: block;
-    width: 140px;
-    margin: 12px auto;
-    padding: 12px;
-    font-size: 16px;
+    width: 18vw;
+    max-width: 180px;
+    margin: 1.5vh auto;
+    padding: 1.5vh;
+    font-size: 2vw;
+    max-font-size: 18px;
     background-color: #007BFF;
     color: white;
     border: none;
@@ -78,15 +90,16 @@ p {
 }
 
 .buttons button:disabled, .upgrades button:disabled {
-    background-color: #6C757D;
+    background-color: #4B5EAA;
     cursor: not-allowed;
 }
 
 .loadBar {
-    width: 90%;
-    height: 25px;
-    background-color: #6C757D;
-    margin: 25px auto;
+    width: 95%;
+    height: 3vh;
+    max-height: 30px;
+    background-color: #4B5EAA;
+    margin: 3vh auto;
     border-radius: 6px;
     overflow: hidden;
 }
