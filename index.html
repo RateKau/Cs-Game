@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリッカーシミュレーター</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loadingScreen" class="screen">
+        <h1>クリッカーシミュレーター</h1>
+        <p id="tip">Tip: クリックを連打してポイントを稼ごう！</p>
+        <p>GameVer: 1.0.0</p>
+        <div class="loadBar">
+            <div class="loadBarInner"></div>
+        </div>
+    </div>
+    <div id="homeScreen" class="screen hidden">
+        <h1>クリッカーシミュレーター</h1>
+        <p>クリック数: <span id="clicks">0</span></p>
+        <p>ジェム: <span id="gems">0</span></p>
+        <button id="clickButton">クリック！</button>
+        <div class="buttons">
+            <button id="questButton">クエスト</button>
+            <button id="upgradeButton">アップグレード</button>
+            <button id="autoClickButton" disabled>オートクリック</button>
+            <button id="fastClickButton" disabled>ファーストクリック</button>
+        </div>
+    </div>
+    <div id="questScreen" class="screen hidden">
+        <h2>クエスト</h2>
+        <p id="questText"></p>
+        <button id="backToHomeFromQuest">戻る</button>
+    </div>
+    <div id="upgradeScreen" class="screen hidden">
+        <h2>アップグレード</h2>
+        <div class="upgrades">
+            <button id="upgradeClicks" disabled>クリック強化 (コスト: <span id="upgradeClicksCost">10</span>)</button>
+            <button id="upgradeGems" disabled>ジェム増加 (コスト: <span id="upgradeGemsCost">20</span>)</button>
+            <button id="upgradeSpeed" disabled>速度向上 (コスト: <span id="upgradeSpeedCost">15</span>)</button>
+            <button id="upgradeLuck" disabled>幸運上昇 (コスト: <span id="upgradeLuckCost">25</span>)</button>
+            <button id="upgradePower" disabled>パワー強化 (コスト: <span id="upgradePowerCost">30</span>)</button>
+            <button id="upgradeBonus" disabled>ボーナス増加 (コスト: <span id="upgradeBonusCost">35</span>)</button>
+        </div>
+        <button id="backToHomeFromUpgrade">戻る</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
